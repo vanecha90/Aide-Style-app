@@ -1,0 +1,56 @@
+<ion-view view-title="Matching">
+  <ion-content>
+  <div ng-controller= "MatchCtr" class="padding">
+<a href="#/tab/style" class="button-icon">
+<button class="button-icon ion-close-round button-right">
+</button>
+</a>
+  <div class="list" >
+    <ion-scroll direction="x" class="item wide-item" style="border:none">
+    <div class="row">
+      <div class="col-33" ng-repeat="product in products">
+    <div class="i-1" id="{{product.id}}">
+      <div class="details">
+        <div class="price">{{product.priceLabel}}</div>
+        <div class="description">{{product.description}}</div>
+      </div>
+      <img class="full-image" data-id={{product.id}} ng-src="{{products[$index].image.sizes.IPhone.url}}" ng-click="showDetails($event)">
+        <p class="text-center">{{product.priceLabel}}</p>
+    </div>
+  </div>
+  </div>
+</ion-scroll></div>
+  <div class="more">
+  <button class="button button-icon icon ion-more icon-right" ng-click="share()"></button>
+</div>
+
+  <!--<div class="row">
+  <div class="col col-50" ng-repeat="product in products" >
+    <div class="i-2">
+      <img class="full-image" ng-src="{{products[$index+1].image.sizes.IPhone.url}}">
+    </div>
+  </div>
+</div>-->
+
+<!--<div class="list">
+  <ion-scroll direction="x" class="item wide-item">
+    <img src="http://placehold.it/70x70">
+    <img src="http://placehold.it/70x70">
+    <img src="http://placehold.it/70x70">
+    <img src="http://placehold.it/70x70">
+    <img src="http://placehold.it/70x70">
+    <img src="http://placehold.it/70 x70">
+  </ion-scroll>
+</div>-->
+
+<div class="item item-divider">
+</div>
+<button class="button button-icon icon ion-more icon-right" ng-click="shar()"></button>
+  <div class="Itemselection selectedItem padding" >
+    <img class="Img" src="">
+    <div class="selected-item-description"></div>
+  </div>
+</br>
+</br>
+  </ion-content>
+</ion-view>

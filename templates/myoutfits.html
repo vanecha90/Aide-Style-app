@@ -1,0 +1,33 @@
+<ion-view view-title="My looks">
+</br>
+</br></br>
+</br>
+<ion-content class="has-header padding" ng-controller="ImageController">
+    <button class="button button-full button-positive" ng-click="addMedia()">
+      Add image
+    </button>
+    <br><br>
+    <a ng-click="showActionsheet()">
+      <div class="myo">
+      <img class="full-image"src="img/mememe.jpg"/>
+    </div>
+    <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" style="height:100px, width:100px"/>
+    </a>
+  </ion-content>
+</div>
+   <!--<ion-content ng-controller="MyoutfitCtrl" ng-init="loadImages()">
+      <a style="text-decoration: none;" href="#/imagepicker"><button class="button button-block button-positive">Add Photo</button></a>
+        <div class="row" ng-repeat="image in images" ng-if="$index % 3 === 0">
+            <div class="col col-33" ng-if="$index < images.length">
+
+                <img ng-src="{{images[$index].src}}" width="100%" />
+            </div>
+            <div class="col col-33" ng-if="$index + 1 < images.length">
+                <img ng-src="{{images[$index + 1].src}}" width="100%" />
+            </div>
+            <div class="col col-33" ng-if="$index ++ 1 < images.length">
+                <img ng-src="{{images[$index ++ 1].src}}" width="100%" />
+            </div>
+        </div>
+    </ion-content>-->
+</ion-view>

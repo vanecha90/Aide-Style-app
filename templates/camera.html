@@ -1,0 +1,19 @@
+<ion-view view-tittle="Camera">
+  <ion-content padding="true" ng-controlle= 'CameraCtrl'>
+    <img ng-src="{{srcImage || 'http://placehold.it/350x150'}}" id="srcImage"
+     width="250 " height="250" style="display: block; margin: 0 auto;"/><br/>
+                 <button class="button button-block button-positive " ng-click="getPhoto() ">
+                   Take Image</button><br/>
+                 <div class="list ">
+                     <label class="item item-input">
+                         <span class="input-label">Occaccion:</span>
+                         <input type="text" name="name" value=""/>
+                     </label>
+                     <label class="item item-input">
+                         <span class="input-label">Name:</span>
+                         <input type="text" name="name" value=""/>
+                     </label>
+                 </div>
+                 <a href="#/myoutfits"><button class="button button-positive"> Save</button></a>
+  </ion-content>
+</ion-view>

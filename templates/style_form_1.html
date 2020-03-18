@@ -1,0 +1,238 @@
+<ion-view view-title="What is your item?">
+  <div class="tabs tabs-top tabs-virtual">
+    <a href class="tab-item disable-user-behavior"
+       ng-class="{active: active_content =='tops'}" ng-click="setActiveContent('tops')">
+      Tops
+    </a>
+    <a href class="tab-item disable-user-behavior"
+       ng-class="{active: active_content =='shoes'}" ng-click="setActiveContent('shoes')">
+      Shoes
+    </a>
+    <a href class="tab-item disable-user-behavior"
+       ng-class="{active: active_content =='bottoms'}" ng-click="setActiveContent('bottoms')">
+      Bottoms
+    </a>
+    <a href class="tab-item disable-user-behavior"
+       ng-class="{active: active_content =='accessories'}" ng-click="setActiveContent('accessories')">
+    Acc
+    </a>
+  </div>
+  <ion-content has-header="true" padding="true" ng-show="active_content =='tops'">
+  </br>
+  </br>
+<div class="row">
+  <div class="item item-body item-borderless"
+  data-key= "itemtype" data-value="dress-shirt" ng-click="selectStyle($event)">
+  <a style="text-decoration: none;" href="#/styleform_color">
+  <div class="col text-center" >
+    <img class="full-image" src="img/shirt.png">
+  <p class="text-aling">Shirt</p>
+</div>
+</a>
+</div>
+<div class="item item-body item-borderless"
+ data-key= "itemtype" data-value="men-jacket" ng-click="selectStyle($event)">
+ <a style="text-decoration: none;" href="#/styleform_color">
+  <div class="col text-center">
+    <img class="full-image" src="img/longsleeve.png">
+  <p class="text-aling">Jacket</p>
+</div>
+</a>
+</div>
+<div class="item item-body item-borderless"
+data-key= "itemtype" data-value="tees" ng-click="selectStyle($event)">
+<a style="text-decoration: none;" href="#/styleform_color">
+  <div class="col text-center">
+    <img class="full-image" src="img/t-shirt.png">
+  <p class="text-aling">T-shirt</p>
+</div>
+</a>
+</div>
+</div>
+<div class="row">
+  <div class="item item-body item-borderless"
+  data-key= "itemtype" data-value="men-blazer" ng-click="selectStyle($event)">
+  <a style="text-decoration: none;" href="#/styleform_color">
+  <div class="col text-center">
+    <img class="full-image" src="img/blazer.png">
+  <p class="text-aling">Blazer</p>
+</div>
+</a>
+</div>
+<div class="item item-body item-borderless"
+ data-key= "itemtype" data-value="polo-shirt" ng-click="selectStyle($event)">
+ <a style="text-decoration: none;" href="#/styleform_color">
+  <div class="col text-center">
+  <img class="full-image" src="img/polo.png">
+  <p class="text-aling">Polo</p>
+</div>
+</a>
+</div>
+<div class="item item-body item-borderless"
+ data-key= "itemtype" data-value="hoodie" ng-click="selectStyle($event)">
+ <a style="text-decoration: none;" href="#/styleform_color">
+  <div class="col text-center">
+    <img class="full-image" src="img/hoodie.png">
+  <p class="text-aling">Hoodie</p>
+</div>
+</a>
+</div>
+</div>
+  </ion-content>
+  <ion-content has-header="true" padding="true" ng-show="active_content =='shoes'">
+  </br>
+  </br>
+  <div class="row">
+    <div class="item item-body item-borderless"
+    data-key= "itemtype" data-value="boots" ng-click="selectStyle($event)">
+    <a style="text-decoration: none;" href="#/styleform_color">
+    <div class="col text-center">
+      <img class="full-image" src="img/sneakers.png">
+    <p class="text-aling">Sneaker</p>
+    </div>
+    </a>
+    </div>
+    <div class="item item-body item-borderless"
+    data-key= "itemtype" data-value="boots" ng-click="selectStyle($event)">
+    <a style="text-decoration: none;" href="#/styleform_color">
+    <div class="col text-center">
+      <img class="full-image" src="img/oxfords.png">
+    <p class="text-aling">Oxfords</p>
+    </div>
+    </a>
+    </div>
+    <div class="item item-body item-borderless"
+    data-key= "itemtype" data-value="boots" ng-click="selectStyle($event)">
+    <a style="text-decoration: none;" href="#/styleform_color">
+    <div class="col text-center">
+      <img class="full-image" src="img/loafer.png">
+    <p class="text-aling">loafters</p>
+    </div>
+    </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-33">
+    <div class="item item-body item-borderless"
+    data-key= "itemtype" data-value="boots" ng-click="selectStyle($event)">
+    <a style="text-decoration: none;" href="#/styleform_color">
+    <div class="col text-center">
+      <img  class="full-image"src="img/boots.png">
+    <p class="text-aling">Boots</p>
+    </div>
+    </a>
+    </div>
+  </div>
+  </div>
+  </ion-content>
+  <ion-content has-header="true" padding="true" ng-show="active_content=='bottoms'">
+  </br>
+  </br>
+  <div class="row">
+      <div class="item item-body item-borderless"
+      data-key= "itemtype" data-value="jeans" ng-click="selectStyle($event)">
+      <a style="text-decoration: none;" href="#/styleform_color">
+      <div class="col text-center">
+        <img class="full-image" src="img/jeans.png">
+      <p class="text-aling">jeans</p>
+      </div>
+      </a>
+      </div>
+    <div class="item item-body item-borderless"
+    data-key= "itemtype" data-value="trousers" ng-click="selectStyle($event)">
+    <a style="text-decoration: none;" href="#/styleform_color">
+    <div class="col text-center">
+      <img  class="full-image"src="img/trousers.png">
+    <p class="text-aling">Trousers</p>
+    </div>
+    </a>
+    </div>
+<div class="col">
+    <div class="item item-body item-borderless"
+    data-key= "itemtype" data-value="pants" ng-click="selectStyle($event)">
+    <a style="text-decoration: none;" href="#/styleform_color">
+    <div class="col text-center">
+      <img class="full-image" src="img/pantsuit.png">
+    <p class="text-aling">Pants</p>
+    </div>
+    </a>
+    </div>
+</div>
+</div>
+  <div class="row">
+    <div class="col-33">
+    <div class="item item-body item-borderless"
+    data-key= "itemtype" data-value="shorts" ng-click="selectStyle($event)">
+    <a style="text-decoration: none;" href="#/styleform_color">
+    <div class="col text-center">
+      <img class="full-image"src="img/shorts1.png">
+    <p class="text-aling">Shorts</p>
+    </div>
+    </a>
+    </div>
+  </div>
+  </div>
+</div>
+  </ion-content>
+  <ion-content has-header="true" padding="true" ng-show="active_content=='accessories'">
+  </br>
+  </br>
+  <div class="row">
+    <div class="item item-body item-borderless"
+    data-key= "itemtype" data-value="boots" ng-click="selectStyle($event)">
+    <a style="text-decoration: none;" href="#/styleform_color">
+    <div class="col text-center">
+      <img class="full-image" src="img/scarf.png">
+    <p class="text-aling">Scarf</p>
+    </div>
+    </a>
+    </div>
+    <div class="item item-body item-borderless"
+    data-key= "itemtype" data-value="boots" ng-click="selectStyle($event)">
+    <a style="text-decoration: none;" href="#/styleform_color">
+    <div class="col text-center">
+      <img class="full-image" src="img/hat.png">
+    <p class="text-aling">Hat</p>
+    </div>
+    </a>
+    </div>
+    <div class="item item-body item-borderless"
+    data-key= "itemtype" data-value="boots" ng-click="selectStyle($event)">
+    <a style="text-decoration: none;" href="#/styleform_color">
+    <div class="col text-center">
+      <img class="full-image" src="img/tie.png">
+    <p class="text-aling">Tie</p>
+    </div>
+    </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="item item-body item-borderless"
+    data-key= "itemtype" data-value="boots" ng-click="selectStyle($event)">
+    <a style="text-decoration: none;" href="#/styleform_color">
+    <div class="col text-center">
+      <img class="full-image" src="img/watch.png">
+    <p class="text-aling">Watch</p>
+    </div>
+    </a>
+    </div>
+    <div class="item item-body item-borderless"
+    data-key= "itemtype" data-value="boots" ng-click="selectStyle($event)">
+    <a style="text-decoration: none;" href="#/styleform_color">
+    <div class="col text-center">
+      <img class="full-image center" src="img/sunglasses.png">
+    <p class="text-aling">Sunglasses</p>
+    </div>
+    </a>
+    </div>
+  <div class="item item-body item-borderless"
+  data-key= "itemtype" data-value="boots" ng-click="selectStyle($event)">
+  <a style="text-decoration: none;" href="#/styleform_color">
+  <div class="col text-center">
+    <img class="full-image" src="img/belt.png">
+  <p class="text-aling">Belt</p>
+  </div>
+  </a>
+  </div>
+  </div>
+</ion-view>

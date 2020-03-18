@@ -1,0 +1,31 @@
+<ion-view title="Detail">
+  <ion-content>
+    <div class="list-inset">
+  <div class="item-text-wrap"
+  ng-repeat="product in products | filter: { name: whichproduct}">
+    <img  class="imgcenter" ng-src="{{product.image.sizes.IPhone.url}}"
+    alt="{{product.name}} Photo">
+    <h4 class="text-center">{{product.name}}</h4>
+    <h4 class="text-center">{{product.priceLabel}}</h4>
+    <p class="text-center">{{product.description |limitTo:150}}</p>
+    <a class="button button-block button-positive" href="{{product.clickUrl}}">Buy It
+    </a>
+  </br>
+</div>
+</div>
+
+
+  <!--  <ion-list class="list-card">
+      <ion-item class="item-text-wrap"
+      ng-repeat="product in products | filter: { name: whichproducts}">
+        <img src="{{product.image.sizes.IPhone.url}}"
+        alt="{{product.name}} Photo">
+          <h1 class="text-center">{{product.name}}</h1>
+          <h2 class="text-center">{{product.priceLabel}}</h2>
+          <p class="text-center">{{product.description |limitTo:400}}</p>
+        </ion-item>
+        <a href="#/match" class="button button-block button-positive" >Buy It
+        </a>
+    </ion-list>-->
+  </ion-content>
+</ion-view>

@@ -1,0 +1,258 @@
+/* Empty. Add your own CSS if you like */
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+
+h1 { font-size: 18px; }
+h6 { font-size: 13px; }
+.splash {
+background: url(../img/wardrove.jpg)  center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+
+
+ .profile-cover {
+    background-color: #000;
+    position: relative;
+    height: 260px; /* original height 290*/
+
+}
+
+ .profile-avatar {
+    background: #000;
+    border: 1px solid #eeeeee;
+    border: 3px solid #ffffff;
+    width: 130px;
+    height: 130px;
+    position:static;/* abosolute*/
+    margin: 0px auto 0;/* 30px*/
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    transition: all .5s;
+    -moz-transition: all .5s; /* Firefox 4 */
+    -webkit-transition: all .5s; /* Safari and Chrome */
+    -o-transition: all .5s; /* Opera */
+}
+ .profile-details, h1{
+    color: white;
+    margin-top: 5px;
+
+}
+.logo-welcome{
+width: 200px;
+height: 200px;
+margin: auto;
+
+}
+.card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: relative;
+
+}
+
+.item-body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+/*
+Fake tabs
+*/
+.view-tabs-top .has-header{
+  top: 94px;
+}
+/* fake tabs style-form*/
+div.tabs.tabs-top{
+  background: #f4f4f4 !important;
+
+  a{
+    color: #aaa;
+    opacity: 0.7;
+  }
+
+  a.active{
+    color: #000;
+    opacity: 1;
+  }
+}
+/* profile fake tabs*/
+div.tabs.tabs-top2{
+  top: 215px;/*245*/
+    background: #f4f4f4 !important;
+
+    a.a{
+      color: #000 !important;
+      opacity: 0.7;*/
+    }
+
+    a.active{
+      color: #000;
+      opacity: 1;*/
+    }
+
+}
+
+ .fake .has-header{
+   top: 300px;
+ }
+/*
+this is the css for the onboardng slider
+*/
+.slider {
+  height: 85%;
+}
+.slider-slide {
+  color: #fff;
+  background-color: #fff;
+  text-align: center;
+}
+.0{
+  width: 375px;
+  height: 667px:
+  position:static;
+}
+.1{
+  width: 375px;
+  height: 667px:
+  position:static;
+}
+/*
+below are the colors of color form
+*/
+.blue {
+  background-color:blue;
+  	border-radius: 50px;
+    width: 70px;
+    height: 70px;
+
+
+}
+
+.yellow {
+  background-color: yellow;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+
+}
+
+.pink {
+  background-color: pink;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+
+}
+.red {
+  background-color: red;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+}
+.black {
+  background-color: #000;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+}
+.white {
+  background-color: #fff;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+border: 1.5px solid #000;
+}
+
+.grey {
+  background-color: #444;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+}
+.green {
+  background-color: #0c4a1a;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+}
+.purple{
+  background-color: #570f78;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+}
+.orange{
+  background-color: #fb9d16;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+}
+.lightb{
+  background-color: #037bf9;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+}
+.brown{
+  background-color: #401e1e;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+}
+.i-1{
+  float:left;
+  margin: auto;
+}
+
+.ab{
+  clear: both;
+  float: right;
+  margin-left: 20px
+}
+
+.Img{
+  margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+
+.details{
+   display: none;
+}
+
+.imgcenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.logoi{
+  width: 140px;
+  height: 140px;
+  margin: auto;
+
+}
+.more{
+  float: right;
+}
+.myo{
+width: 100px;
+height: 100px;
+}

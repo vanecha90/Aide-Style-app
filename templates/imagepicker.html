@@ -1,0 +1,26 @@
+<ion-view view-title="Picker">
+  <ion-conten ng-controller="ExampleController" class="padding">
+  </br>
+</br>
+</br>
+    <button class="button button-block button-positive" ng-click="takePhoto()">
+Take Photo
+</button>
+<button class="button button-block button-stable" ng-click="choosePhoto()">
+Choose Photo
+</button>
+<img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="text-align: center">
+</ion-content>
+  </ion-content>
+  <div class="list ">
+      <label class="item item-input">
+          <span class="input-label">Occaccion:</span>
+          <input type="text" name="name" value=""/>
+      </label>
+      <label class="item item-input">
+          <span class="input-label">Name:</span>
+          <input type="text" name="name" value=""/>
+      </label>
+  </div>
+  <a ng-click="savephoto()" href="#/myoutfits"><button class="button button-positive">Save</button></a>
+</ion-view>

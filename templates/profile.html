@@ -1,0 +1,101 @@
+</br>
+<ion-view view-title="Profile">
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-dark">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-positive icon ion-settings" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <!-- TABS -->
+<ion-content>
+<div ng-controller="ProfileCtrl">
+  <div class="profile-card">
+      <div class="profile-cover">
+          <div class="profile-avatar">
+              <a href="#"><img  class=" full-image"src="img/profle.png"
+            alt="Mark T"></a>
+          </div>
+          <div class="profile-details">
+              <h1 class="text-center" class="color-white">Guest</h1>
+          </div>
+      </div>
+</div>
+</br>
+<div class="profile-content" class="view-tabs">
+    <div class=" tabs-virtual tabs tabs-top2">
+      <a href class="tab-item disable-user-behavior"
+         ng-class="{active: active_content =='likes'}" ng-click="setActiveContent('likes')">
+        Likes
+      </a>
+      <a href class="tab-item disable-user-behavior"
+         ng-class="{active: active_content =='save-outfits'}" ng-click="setActiveContent('save-outfits')">
+        Saved outfits
+      </a>
+</div>
+</div>
+<div class="fake" has-header="true" padding="true" ng-show="active_content =='likes'">
+  <div class="row">
+  <div class="col-50 padding">
+    <div class="card">
+      <img src="img/bracelet.png" class="full-image">
+      <div class="item item-divider">
+        <p>Iokai Bracalet</p>
+        <p>$18</p>
+     </div>
+    </div>
+  </div>
+  <div class="col-50 padding">
+  <div class="card">
+    <img src="img/nikesneaker.png" class="full-image">
+    <div class="item item-divider">
+     <p>Nike Sneakers</p>
+     <p>$100</p>
+   </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="fake" has-header="true" padding="true" ng-show="active_content =='save-outfits'">
+  <div class="row">
+  <div class="col-50">
+    <div class="card">
+      <img src="img/outfit.png"class="full-image">
+      <div class="item item-divider">
+       <p>Casual outfit</p>
+     </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</ion-content>
+  </ion-side-menu-content>
+
+   <!-- Side Menu (left) -->
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">Settings</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close ng-click="login()">
+          Login
+        </ion-item>
+        <ion-item menu-close href="#/">
+          Sign up
+        </ion-item>
+        <ion-item menu-close href="#/">
+          FAQ's
+        </ion-item>
+        <ion-item menu-close href="#/">
+          Info
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+</ion-side-menus>
+</ion-view>

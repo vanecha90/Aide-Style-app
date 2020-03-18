@@ -1,0 +1,46 @@
+<ion-view view-title="Top Outfits">
+  <ion-content ng-controller= "TopoutCtrl" class="padding">
+    <div class="row">
+    <div class="col-50 padding">
+    <a href="#/topoutfits/{{product.name}}" style="text-decoration: none;">
+      <div class="card" ng-if="$even" ng-repeat='product in products | filter: query' href="#/topoutfits/{{product.name}}">
+          <img class="full-image" ng-src=" {{products[$index].image.sizes.IPhone.url}}" alt="{{product.name}} Photo">
+        <p class="text-center">{{product.name}}</p>
+        <p class="text-center">{{product.priceLabel}}</p>
+        <div class="item tabs tabs-secondary tabs-icon-right">
+         <a>
+          <button ion-track-tap="thumbsup" ion-track-data="{product:product in products}" class="button icon ion-thumbsup button-clear "
+          ng-click="button.clicked=!button.clicked"
+          ng-class="button.clicked?' button-clear button-positive':
+          'button-clear button-dark'">
+        </button>
+         </a>
+         <a class="tab-item" ng-click="share()">
+           <i class="icon ion-share"></i> Share
+         </a>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-50 padding">
+     <a href="#/topoutfits/{{products[$index+1].name}}" style="text-decoration: none;"><div class="card" ng-if="$even" ng-repeat='product in products | filter: query' href="#/topoutfits/{{products[$index+1].name}}">
+            <img class="full-image" ng-src=" {{products[$index+1].image.sizes.IPhone.url}}">
+        <p class="text-center">{{products[$index+1].name}}</p>
+        <p class="text-center">{{products[$index+1].priceLabel}}</p>
+        <div class="item tabs tabs-secondary tabs-icon-right">
+         <a>
+          <button ion-track-tap="thumbsup" ion-track-data="{product:product in products}" class="button icon ion-thumbsup button-clear "
+          ng-click="button.clicked=!button.clicked"
+          ng-class="button.clicked?' button-clear button-positive':
+          'button-clear button-dark'"></button></a>
+          <a class="tab-item" ng-click="share()">
+            <i class="icon ion-share"></i> Share
+          </a>
+        </div>
+      </div>
+    </a>
+    </div>
+    </div>
+
+  </ion-content>
+</ion-view>
